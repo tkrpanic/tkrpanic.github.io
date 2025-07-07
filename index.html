@@ -21,6 +21,14 @@
                     margin-top: 16px;
                     margin-bottom: 16px;
                 }
+            .wrapper {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 768px;
+            }
+            .header {
+                background-color:  red;
+            }
                 main {
                     margin-left: auto;
                     margin-right: auto;
@@ -35,7 +43,13 @@
                 list-style-type: none;
                 padding-left: 10%;
                 }
-                
+                          .input {
+                width: 100%;
+                border-radius: 0;
+                border: none;
+                background-color: cyan;
+                color: black;
+            }
             </style>
     </head>
     <body>
@@ -112,10 +126,58 @@
             <td>500</td>
             <td>5000</td>
         </tr>
-
      </tbody>
     </table>
     </p>
+            </section>
+            <section>
+                <h2>Request a quato for your project</h2>
+                <form>
+                    <div>
+                        <label for="name">Your first and last name:</label>
+                        <input class="input" type="text" id="name" name="full_name">
+                    </div>
+                    <div>
+                        <label for="name">Your title:</label>
+                        <select class="input">
+                            <option value="mr">Mr</option>
+                            <option value="mrs">Mrs</option>
+                            <option value="sir">Sir</option>
+                            <option value="madam">Madam</option>
+                        </select>
+                    </div>
+                                <div>
+            <label>Email</label>
+            <input type="email" name="Email" required>
+        </div>
+                <div>
+            <label>Project description</label>
+            <textarea rows="10" cols="200" name="massage" required></textarea>
+        </div>
+    </form>
+        <div>
+            <label for="Your Project Budget">Your project Budget</label>
+            <select name="Budget" id="Select from the list">
+            <option value="">--Please choose an option--</option>
+            <option value="10k EUR">&lt;10k EUR</option>
+             <option value="10-100k EUR">10-100k EUR</option>
+            <option value="100k EUR">&gt;100k EUR</option>
+            </select>
+                        <div>
+                <p>Type of service required</p>
+                <label><input type="radio" value="true" name="design">Design</label>
+                <label><input type="radio" value="false" name="development">Development</label>
+            </div>
+        <div>
+            <input id="gdpr" type="checkbox" value="true" name="GDPR">
+            <label for="GDPR">GDPR Read and understood</label>
+        </div>
+                    <div>
+                        <button type="submit">Send request</button>
+                    </div>
+        </div>
+                    </div>
+                </form>
             </section>
     </main>
     </body>
