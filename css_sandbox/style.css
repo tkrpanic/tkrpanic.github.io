@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Michroma&family=Rubik+Moonrocks&display=swap');
 
 html{
     font-size: 16px;
@@ -6,24 +7,31 @@ html{
 
 body{
     background-color: yellow;
-    color: #7B68EE;
-    font-family: "Rubik Moonrocks";
-    font-weight: 400;
+    color: #68eecc;
+    font-family: "Inter";
+    font-weight: 800;
     font-style: normal;
+    text-align: left;
     
 }
 body{
-    background-color: #FFEFD5 ;
+    background-color: #d5ecff;
+    background-image:url(media/water_wave_pattern.jpg);
+    background-repeat: repeat-y;
+    background-size: 150px;
+    background-position-x: left;
+    color: rgb(255, 0, 157);
 }
 
 h1{
     color: blueviolet;
 }
 h1,h2,h3,h4,h5,h6{
+    font-family: "Rubik Moonrocks";
     font-weight: 400;
     text-align: center;
     font-style: italic;
-    color: rgb(255, 127, 159)
+    color: rgba(255, 127, 159, 0.932)
 }
 
 h1  {
