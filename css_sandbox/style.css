@@ -86,3 +86,14 @@ h1{
 strong {
     text-decoration: underline;
 }
+
+.wrapper {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: 1px solid salmon;
+    padding: 80px 40px;
+    margin: auto;
+    margin-left: auto
+    box-sizing: border-box;
+}
