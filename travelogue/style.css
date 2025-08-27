@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/*
+
+Typography
+
+*/
+
+.h1 {
+  font-family: Rubik, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 125%;
+}
+
+.h2 {
+  font-family: Rubik, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 125%;
+}
+
+.p {
+  font-family: Rubik, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.em {
+  font-family: Rubik, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.small {
+  font-family: Rubik, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 150%;
+}
+
+/*
+
+Colors
+
+*/
+
+.color-primary {
+  color: #50ad9c;
+}
+
+.color-text {
+  color: #1a1a1a;
+}
+
+.color-text-muted {
+  color: #808080;
+}
+
+.color-gray-light {
+  color: #eee;
+}
+
+.bg-color-primary {
+  background-color: #50ad9c;
+}
+
+.bg-color-text {
+  background-color: #1a1a1a;
+}
+
+.bg-color-text-muted {
+  background-color: #808080;
+}
+
+.bg-color-gray-light {
+  background-color: #eee;
+}
+
+/*
+
+Link styles
+
+*/
+
+a.active {
+  color: #50ad9c;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*
+
+Header navigation styles
+
+*/
+
+.navigation {
+  text-align: center;
+}
+
+.navigation-item:nth-child(n + 2) {
+  margin-left: 32px;
+}
+
+/*
+
+Logo styles
+
+*/
+
+.logo {
+  height: 64px;
+  width: auto;
+  display: inline-block;
+}
+
+/*
+
+Header styles
+
+*/
+
+.header {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.header .navigation {
+  margin-top: 16px;
+}
+
+/*
+
+Footer styles
+
+*/
+
+.footer {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+/*
+
+Main styles
+
+*/
+
+.main {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+/*
+
+Feature styles
+
+*/
+
+.feature-metadata {
+  margin-top: 16px;
+}
+
+.feature-title {
+  margin-top: 16px;
+}
+
+.feature-metadata-item:nth-child(n + 2)::before {
+  content: "-";
+  margin: 0 8px;
+}
+
+a.feature-metadata-item {
+  font-weight: 400;
+}
+
+.feature-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1120 / 630;
+  object-fit: cover;
+}
+
+/*
+
+Wrapper style
+
+*/
+
+.wrapper {
+  max-width: 1120px;
+  margin: 0 auto;
+}
