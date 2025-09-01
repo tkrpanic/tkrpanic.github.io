@@ -1,5 +1,77 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
+/*
+
+Animations
+
+*/
+@keyframes fade-in {
+  0% {
+  opacity: 0;  
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fade-in 1s linear;
+  animation-fill-mode: both;
+}
+.delay-1 {
+  animation-delay: 1s;
+}
+.fade-in.staggered > * {
+  animation: fade-in 0.2s linear;
+  animation-fill-mode: both;
+}
+
+.fade-in.staggered > *:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.fade-in.staggered > *:nth-child(3) {
+  animation-delay: 1s;
+}
+.fade-in.staggered > *:nth-child(4) {
+  animation-delay: 1.5s;
+}
+.fade-in.staggered > *:nth-child(5) {
+  animation-delay: 2s;
+}
+.fade-in.staggered *:nth-child(n+6) {
+  animation-delay: 2.5s;
+}
+
+@keyframes sharpen {
+  from {
+        filter: blur(12px);
+      }
+      to {
+        filter: blur(0);
+      }
+    }
+
+     /* Shake effect */
+
+  @keyframes shake {
+      0% { transform: translate(0, 0) rotate(0deg); }
+      10% { transform: translate(-5px, 0) rotate(-1deg); }
+      20% { transform: translate(5px, 0) rotate(1deg); }
+      30% { transform: translate(-5px, 0) rotate(-1deg); }
+      40% { transform: translate(5px, 0) rotate(1deg); }
+      50% { transform: translate(-5px, 0) rotate(-1deg); }
+      60% { transform: translate(5px, 0) rotate(1deg); }
+      70% { transform: translate(-5px, 0) rotate(-1deg); }
+      80% { transform: translate(5px, 0) rotate(1deg); }
+      90% { transform: translate(-5px, 0) rotate(-1deg); }
+      100% { transform: translate(0, 0) rotate(0deg); }
+    }
+
+  .sharpen {
+    animation: sharpen 3s ease forwards, shake 3s ease-in-out 2s;
+
+  }
 /*
 
 Typography
@@ -112,8 +184,6 @@ a {
 a:hover {
   color: red;
   transform: scale(1.2) rotate(360deg);
-    transform: scale(1.2) rotate(10deg);  /* make bigger + rotate */
-  background-color: darkslateblue;
 }
 
 /*
